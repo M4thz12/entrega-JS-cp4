@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Tarefas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <h1>Tabela de Tarefas</h1>
+    <div>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Adicione sua Tarefa</legend>
+                <div class="adicionando">
+                    <label for="IDdescricao">Descrição:</label>
+                    <input type="text" id="IDdescricao" placeholder="Descrição">
+                    <label for="IDautor">Autor:</label>
+                    <input type="text" id="IDautor" placeholder="Autor">
+                    <label for="IDdepartamento">Departamento:</label>
+                    <input type="text" id="IDdepartamento" placeholder="Departamento">
+                    <label for="importancia">Importância:</label>
+                    <select id="importancia">
+                        <option value="muito-importante">Muito Importante</option>
+                        <option value="relevante">Relevante</option>
+                        <option value="pouco-importante">Pouco Importante</option>
+                    </select>
+                    <label for="IDvalor">Valor:</label>
+                    <input type="number" id="IDvalor" placeholder="Valor">
+                    <label for="IDduracao">Duração:</label>
+                    <input type="text" id="IDduracao" placeholder="Duração">
+                </div>
+                <div class="botoes">
+                    <button type="button" id="Botao">Adicionar</button>
+                    <button type="button" id="BotaoImportancia">Ordenar por Importancia</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div id="tabela">
+        <table class="tabela-tarefas">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Autor</th>
+                    <th>Departamento</th>
+                    <th>Importancia</th>
+                    <th>Valor</th>
+                    <th>Duração</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody><!-- Aqui é onde as linhas de dados serão adicionadas --></tbody>
+        </table>
+    </div>
+</body>
+</html>
